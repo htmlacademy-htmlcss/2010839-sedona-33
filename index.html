@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-    <header class="page-header">
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <img class="logo" src="#" alt="Логотип города Седона."> <!--Логотип седоны, не знаю верно ли-->
-          <li class="navigation-item">
-            <a class="navigation-link" href="homepage.html">Главная</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="about.html">О Седоне</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="Hotels.html">Гостиницы</a>
-          </li>
-        </ul>
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link navigation-user" href="Search.html">
-              <span class="visually-hidden">Поиск</span>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link navigation-user" href="Favorites.html">
-              <span class="visually-hidden">Избранное</span>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link navigation-user" href="#">
-              <span class="visually-hidden">ХОЧУ СЮДА</span>
-            </a>
-          </li>
-        </ul>
-    </header>
-      <main class="main-index">
-        <h1 class="visually-hidden">Город Седона</h1>
-        <img class="logo" src="#" alt="Добро пожаловать в Седону"><br>
-        <img class="logo" src="#" alt="Гранд каньон"><br>
-        <b>Седона — небольшой городок в Аризоне, заслуживающий большего!<b>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <nav class="navigation">
+      <img class="logo" src="#" alt="Логотип города Седона.">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link" href="homepage.html">Главная</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="about.html">О Седоне</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="Hotels.html">Гостиницы</a>
+        </li>
+      </ul>
+      <ul class="navigation-list navigation-user">
+        <li class="navigation-item">
+          <a class="navigation-link navigation-user" href="Search.html">
+            <span class="visually-hidden">Поиск</span>
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link navigation-user" href="Favorites.html">
+            <span class="visually-hidden">Избранное</span>
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link navigation-user" href="#">
+            <span class="visually-hidden">ХОЧУ СЮДА</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-index">
+    <h1 class="visually-hidden">Город Седона</h1>
+    <img class="logo" src="#" alt="Добро пожаловать в Седону"><br>
+    <img class="logo" src="#" alt="Гранд каньон"><br>
+    <b>Седона — небольшой городок в Аризоне, заслуживающий большего!<b>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         <section class="advantages">
           <ul class="advantages list">
@@ -50,15 +53,15 @@
               <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               <dl class="advantages options">
                 <dt>Жильё</dt>
-                  <dd>Рекомендуем пожить в настоящем мотеле, всё как в кино!</dd>
+                <dd>Рекомендуем пожить в настоящем мотеле, всё как в кино!</dd>
               </dl>
               <dl class="advantages options">
                 <dt>Еда</dt>
-                  <dd>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</dd>
+                <dd>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</dd>
               </dl>
               <dl class="advantages options">
                 <dt>Сувениры</dt>
-                  <dd>Не только китайского, но и настоящего местного производства!</dd>
+                <dd>Не только китайского, но и настоящего местного производства!</dd>
               </dl>
             </li>
             <li class="advantages item">
@@ -82,47 +85,45 @@
         <section class="appointment">
           <h2 class="appointment-title">Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <form class="appointment-form" action="catalog.html" method="post">   <!--Указал страницу как раз где поиск гостинец, домена нет, поэтому без него(типа ссылка, но не полностью), тоже не знаю верно ли-->
+          <form class="appointment-form" action="catalog.html" method="post">
+            <!--Указал страницу как раз где поиск гостинец, домена нет, поэтому без него(типа ссылка, но не полностью), тоже не знаю верно ли. И вообще не знаю полный или относительный адрес тут нужен, или это без разницы?-->
             <button class="button" type="submit">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
           </form>
         </section>
-      </main>
-    <footer class="page-footer">
+  </main>
+  <footer class="page-footer">
+    <section class="footer-subscribe">
+      <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
+      <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+      <label for="newsletter-email"></label>
+      <input class="field" placeholder="Ваш Email" type="email" name="newsletter-email" id="newsletter-email" required>
+      <button class="button newsletter-button" type="submit">Подписаться</button>
+    </section>
+    <section class="footer-social">
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="button" href="#"></a>
+          <span class="visually-hidden">Твиттер</span>
+        </li>
+        <li class="footer-social-item">
+          <a class="button" href="#"></a>
+          <span class="visually-hidden">Фейсбук</span>
+        </li>
+        <li class="footer-social-item">
+          <a class="button" href="#"></a>
+          <span class="visually-hidden">Ютуб</span>
+        </li>
+      </ul>
+    </section>
+    <section class="footer-contacts">
+      <address class="footer-contacts-phone">
+        <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </address>
+    </section>
+    <section class="footer-made-in">
+      <a class="button" href="https://htmlacademy.ru/">.html academy</a>
+    </section>
+  </footer>
+</body>
 
-      <section class="footer-subscribe">
-        <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
-        <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
-        <label for="newsletter-email"></label>
-        <input class="field" placeholder="Ваш Email" type="email" name="newsletter-email" id="newsletter-email" required>
-        <button class="button newsletter-button" type="submit">Подписаться</button>
-      </section>
-
-      <section class="footer-social">
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="button" href="#"></a>
-            <span class="visually-hidden">Твиттер</span>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="#"></a>
-            <span class="visually-hidden">Фейсбук</span>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="#"></a>
-            <span class="visually-hidden">Ютуб</span>
-          </li>   
-        </ul>
-      </section>
-      <section class="footer-contacts">
-        <address class="footer-contacts-phone">
-          <a class="footer-contacts-phone" href="tel:+78121212">+7 (812) 812-12-12</a>
-        </address>
-      </section>
-
-      <section class="footer-made-in">
-        <a class="button" href="https://htmlacademy.ru/">.html academy</a>
-      </section>
-
-    </footer>
-  </body>
 </html>
