@@ -1,0 +1,139 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/pt-sans-regular.woff2") format("woff2");
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/pt-sans-bold.woff2") format("woff2");
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "PT Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: url("fonts/pt-sans-italic.woff2") format("woff2");
+  }
+  
+  @font-face {
+    font-family: "PT Sans";
+    font-style: italic;
+    font-weight: 700;
+    src: url("fonts/pt-sans-bold-italic.woff2") format("woff2");
+    font-display: swap;
+  }
+
+  /* Root */
+
+  body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 24px;
+    line-height: 26px;
+    color: #000000;
+    background-color: #FFFFFF;
+  }
+
+
+  /* Pages */
+
+    .page-header {
+    color: #000000;
+    background: #ffffff;
+  }
+
+  .navigation-link {
+    font-size: 20px;
+    font-weight: 700;
+    color: inherit;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+
+  .main-index {
+    font-size: 30px;
+    line-height: 36px;
+    background-image: url("../images/index-background.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .main-inner {
+    color: #000000;
+    background-color: #FFFFFF;
+  }
+
+  .advantages-list {
+    text-align: center;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+
+  .advantages-title {
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+  }
+  
+  .advantages-title-options {
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .appointment {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  .page-footer {
+    font-size: 30px;
+    line-height: 36px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    background-image: url("../images/footer-background.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .footer-contacts-phone {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  .inner-header {
+    background-image: url("../images/catalog-background.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .inner-header-title {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 78px;
+    color: #ffffff;
+  }
+
+  .breadcrumbs {
+    color: #ffffff;
+  }
+
+  .breadcrumbs-link {
+    color: #ffffff;
+  }
+
+  .catalog-filter-title {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #ffffff;
+  }
