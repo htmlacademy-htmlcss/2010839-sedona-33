@@ -5,27 +5,12 @@
     src: url("fonts/pt-sans-regular.woff2") format("woff2");
     font-display: swap;
   }
-  
+
   @font-face {
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
     src: url("fonts/pt-sans-bold.woff2") format("woff2");
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: "PT Sans";
-    font-style: italic;
-    font-weight: 400;
-    src: url("fonts/pt-sans-italic.woff2") format("woff2");
-  }
-  
-  @font-face {
-    font-family: "PT Sans";
-    font-style: italic;
-    font-weight: 700;
-    src: url("fonts/pt-sans-bold-italic.woff2") format("woff2");
     font-display: swap;
   }
 
@@ -39,12 +24,11 @@
     background-color: #ffffff;
   }
 
-
   /* header */
 
   .page-header {
     color: #000000;
-    background: #ffffff;
+    background-color: #ffffff;
   }
 
   .navigation-link {
@@ -54,6 +38,12 @@
     text-align: center;
     text-decoration: none;
     text-transform: capitalize;
+  }
+
+  .navigation-here {
+    color: #ffffff;
+    background-color: #756257;
+    text-transform: uppercase;
   }
 
   /* main */
@@ -67,11 +57,27 @@
     background-repeat: no-repeat;
   }
 
+  .main-index-description {
+    font-weight: 700;
+  }
+
+  .main-index-advantages {
+    font-size: 22px;
+    line-height: 36px;
+    text-transform: none;
+    color: #333333;
+  }
+
   .advantages-list {
     font-size: 18px;
     line-height: 21px;
     text-align: center;
     text-transform: none;
+  }
+
+  .advantages-list-images {
+    color: #ffffff;
+    background-color: #83B3D3;
   }
 
   .advantages-title {
@@ -80,7 +86,7 @@
     text-transform: uppercase;
     font-weight: 700;
   }
-  
+
   .advantages-title-options {
     font-size: 24px;
     line-height: 28px;
@@ -88,27 +94,27 @@
     font-weight: 700;
   }
 
-  .appointment {
+  .appointment-title {
     font-size: 30px;
     line-height: 36px;
     text-align: center;
   }
 
-  /* footer */
+  .appointment-description {
+    font-size: 22px;
+    line-height: 26px;
+    color: #333333;
+    text-transform: none;
+  }
 
-  .page-footer {
-    font-size: 30px;
+  .search-button {
+    font-size: 20px;
     line-height: 36px;
+    font-weight: 700;
     color: #ffffff;
+    background-color: #756257;
     text-align: center;
-    text-decoration: none;
-    background-image: url("../images/footer-background.jpg");
-    background-repeat: no-repeat;
-  }
-
-  .footer-contacts-phone {
-    color: #000000;
-    text-decoration: none;
+    text-transform: uppercase;
   }
 
   /* catalog */
@@ -160,6 +166,12 @@
     color: #ffffff;
   }
 
+  .button-truth {
+    color: #ffffff;
+    background-color: #83B3D3;
+    text-transform: uppercase;
+  }
+
   .search-result {
     font-size: 30px;
     line-height: 39px;
@@ -195,7 +207,7 @@
     line-height: 31px;
     font-weight: 700;
   }
-  
+
   .hotel-card-price {
     font-size: 18px;
     line-height: 23px;
@@ -209,7 +221,7 @@
     text-transform: uppercase;
     color: #ffffff;
     text-decoration: none;
-    background-color: #83B3D3;
+    background-color: #756257;
   }
 
   .hotel-card-subscribe {
@@ -219,15 +231,94 @@
     text-transform: uppercase;
     color: #ffffff;
     text-decoration: none;
-    background-color: #756257;
+    background-color: #83B3D3;
+  }
+
+  .hotel-card-subscribe-current {
+    background-color: #7DB54F;
+  }
+
+  .pagination-show-more {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #83B3D3;
+    text-transform: uppercase;
   }
 
   .pagination {
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
-    color: #ffffff;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
   }
+
+  .pagination-link {
+    color: #ffffff;
+    background-color: #83B3D3;
+    text-decoration: none;
+  }
+
+  .pagination-current {
+    color: #000000;
+    background-color: #F2F2F2;
+  }
+
+  .filter-amount {
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #333333;
+    text-transform: none;
+  }
+
+/* footer */
+
+.page-footer {
+  font-size: 30px;
+  line-height: 36px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  background-image: url("../images/footer-background.jpg");
+  background-repeat: no-repeat;
+}
+
+.page-footer-catalog {
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+}
+
+.page-footer-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.newsletter-button {
+  color: #ffffff;
+  background-color: #83B3D3;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.page-footer-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+/* номер телефона сделать без наклона */
+
+.footer-contacts-phone {
+  color: #000000;
+  text-decoration: none;
+}
+
+

@@ -36,7 +36,9 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link navigation-user" href="#">ХОЧУ СЮДА</a>
+          <a class="navigation-link navigation-user navigation-here" href="#">
+            <span class="button">хочу сюда!</span>
+          </a>
         </li>
       </ul>
     </nav>
@@ -98,8 +100,8 @@
           </ul>
       </fieldset>
       <!--Тут пузомерок надо, пока не делаем, в следующем лайве будут объяснять-->
-      <button class="button" type="submit">Применить</button>
-      <button class="button" type="submit">Сбросить</button>
+      <button class="button button-truth" type="submit">Применить</button>
+      <button class="button button-false" type="submit">Сбросить</button>
     </form>
   </section>
   <p class="search-result">НАЙДЕНО ГОСТИНИЦ:38</p>
@@ -127,6 +129,7 @@
       <a class="hotel-card-info" href="#">подробнее</a>
       <a class="hotel-card-subscribe" href="#">в избранное</a>
       <img class="hotel-card-rating" src="images/star.svg" width="18px" height="17px" alt="Рейтинг">
+      <!--не знаю как рейтинг делать повторяющимся-->
     </li>
     <li class="hotel-card">
       <a class="hotel-card-link" href="hotel-2.html">
@@ -145,7 +148,7 @@
       </a>
       <p class="hotel-card-price">От 2000 ₽</p>
       <a class="hotel-card-info" href="#">подробнее</a>
-      <a class="hotel-card-subscribe" href="#">в избранное</a>
+      <a class="hotel-card-subscribe hotel-card-subscribe-current" href="#">в избранное</a>
       <img class="hotel-card-rating" src="images/star.svg" width="18px" height="17px" alt="Рейтинг">
     </li>
     <li class="hotel-card">
@@ -160,12 +163,7 @@
     </li>
   </ul>
   <button class="button pagination-show-more" type="button">Загрузить еще</button>
-  <ol class="pagination">
-    <li class="pagination-item">
-      <a class="pagination-link pagination-prev pagination-disabled">
-        <span class="visually-hidden">Предыдущая страница</span>
-      </a>
-    </li>
+  <ul class="pagination">
     <li class="pagination-item">
       <a class="pagination-link pagination-current">1</a>
     </li>
@@ -176,11 +174,12 @@
       <a class="pagination-link" href="#">3</a>
     </li>
     <li class="pagination-item">
-      <a class="pagination-link pagination-next" href="#">
-        <span class="visually-hidden">Следующая страница</span>
-      </a>
+      <a class="pagination-link" href="#">4</a>
     </li>
-  </oll>
+    <li class="pagination-item">
+      <a class="pagination-link" href="#">10</a>
+    </li>
+  </ul>
   <label class="filter-amount" for="amount">Гостиниц на странице</label>
   <select name="amount of hotels" id="amount">
     <option value="4">4</option>
@@ -188,10 +187,10 @@
     <option value="10">10</option>
   </select>
 </main>
-<footer class="page-footer">
+<footer class="page-footer-catalog">
   <section class="footer-subscribe">
     <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
-    <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+    <p class="page-footer-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
     <label for="newsletter-email"></label>
     <input class="field" placeholder="Ваш Email" type="email" name="newsletter-email" id="newsletter-email" required>
     <button class="button newsletter-button" type="submit">Подписаться</button>

@@ -19,7 +19,7 @@
           <a class="navigation-link" href="about.html">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="Hotels.html">Гостиницы</a>
+          <a class="navigation-link" href="hotels.html">Гостиницы</a>
         </li>
       </ul>
       <ul class="navigation-list navigation-user">
@@ -34,8 +34,8 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link navigation-user" href="#">
-            <span class="button">ХОЧУ СЮДА</span>
+          <a class="navigation-link navigation-user navigation-here" href="#">
+            <span class="button">хочу сюда!</span>
           </a>
         </li>
       </ul>
@@ -46,14 +46,16 @@
     <img class="logo" src="images/logo-WELCOME.svg" width="187px" height="44px" alt="Добро пожаловать"><br>
     <img class="logo" src="images/logo-to-the-gorgeous.svg" width="256px" height="28px" alt="'Великолепный'"><br>
     <img class="logo" src="images/logo-SEDONA.svg" width="456px" height="212px" alt="Седона-гранд каньон"><br>
-      <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+      <p class="main-index-description">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+      <p class="main-index-advantages">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         <section class="advantages">
           <ul class="advantages-list">
             <li class="advantages-item">
+            <div class="advantages-list-images">
               <h2 class="advantages-title">Настоящий городок</h2>
               <img class="content-images" src="images/true-city.jpg" width="800px" height="384px">
               <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
               <dl class="advantages-options">
                 <dt class="advantages-title-options">Жильё</dt>
                 <img class="logo" src="images/house.svg" width="74px" height="72px" alt="Домик">
@@ -70,11 +72,13 @@
                 <dd>Не только китайского, но и настоящего местного производства!</dd>
               </dl>
             </li>
+            <div class="advantages-list-images">
             <li class="advantages-item">
               <h2 class="advantages-title">Там есть мост дьявола</h2>
               <img class="content-images" src="images/devil's-bridge.jpg" width="800px" height="384px">
               <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </li>
+            </div>
             <li class="advantages-item">
               <h2 class="advantages-title">Небольшая площадь</h2>
               <p class="advantages-description">Все достопримечательности находятся очень близко</p>
@@ -91,16 +95,16 @@
         </section>
         <section class="appointment">
           <h2 class="appointment-title">Заинтересовались?</h2>
-          <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p class="appointment-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <form class="appointment-form" action="catalog.html" method="post">
-            <button class="button" type="submit">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+            <button class="button search-button" type="submit">поиск гостиницы в Седоне</button>
           </form>
         </section>
   </main>
   <footer class="page-footer">
     <section class="footer-subscribe">
       <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
-      <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+      <p class="page-footer-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
       <label for="newsletter-email"></label>
       <input class="field" placeholder="Ваш Email" type="email" name="newsletter-email" id="newsletter-email" required>
       <button class="button newsletter-button" type="submit">Подписаться</button>
