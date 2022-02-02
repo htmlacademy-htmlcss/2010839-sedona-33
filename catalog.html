@@ -44,7 +44,8 @@
     </nav>
   </header>
 <main class="main-inner">
-  <header class="inner-header">
+  <div class="main-search">
+    <header class="inner-header">
     <h1 class="inner-header-title">Гостиницы Седоны</h1>
     <ul class="breadcrumbs">
       <li class="breadcrumbs-item">
@@ -104,6 +105,7 @@
       <button class="button button-false" type="submit">Сбросить</button>
     </form>
   </section>
+  </div>
   <p class="search-result">НАЙДЕНО ГОСТИНИЦ:38</p>
   <select class="select-control" aria-label="Сортировка">
     <option value="low price">Сначала дешевые</option>
@@ -122,7 +124,7 @@
   <ul class="hotels-list">
     <li class="hotel-card">
       <a class="hotel-card-link" href="hotel-1.html">
-        <img class="hotel-card-images" src="images/Amara-Resort-Spa.jpg" width="299px" height="206px" alt="Amara Resort & Spa">
+        <img class="hotel-card-images" src="images/hotel-amara-resort-spa.jpg" width="299px" height="206px" alt="Amara Resort & Spa">
         <h2 class="hotel-card-title">Amara Resort & Spa</h2>
       </a>
       <p class="hotel-card-price">От 4000 ₽</p>
@@ -133,7 +135,7 @@
     </li>
     <li class="hotel-card">
       <a class="hotel-card-link" href="hotel-2.html">
-        <img class="hotel-card-images" src="images/Desert-Quail-Inn.jpg" width="299px" height="206px" alt="Desert Quail Inn">
+        <img class="hotel-card-images" src="images/hotel-desert-quail-inn.jpg" width="299px" height="206px" alt="Desert Quail Inn">
         <h2 class="hotel-card-title">Desert Quail Inn</h2>
       </a>
       <p class="hotel-card-price">От 3000 ₽</p>
@@ -143,7 +145,7 @@
     </li>
     <li class="hotel-card">
       <a class="hotel-card-link" href="hotel-3.html">
-        <img class="hotel-card-images" src="images/Villas-Poco-Diablo.jpg" width="299px" height="206px" alt="Villas at Poco Diablo">
+        <img class="hotel-card-images" src="images/hotel-villas-poco-diablo.jpg" width="299px" height="206px" alt="Villas at Poco Diablo">
         <h2 class="hotel-card-title">Villas at Poco Diablo</h2>
       </a>
       <p class="hotel-card-price">От 2000 ₽</p>
@@ -153,7 +155,7 @@
     </li>
     <li class="hotel-card">
       <a class="hotel-card-link" href="hotel-4.html">
-        <img class="hotel-card-images" src="images/GreenTree-Inn.jpg" width="299px" height="206px" alt="GreenTree Inn">
+        <img class="hotel-card-images" src="images/hotel-greentree-inn.jpg" width="299px" height="206px" alt="GreenTree Inn">
         <h2 class="hotel-card-title">GreenTree Inn</h2>
       </a>
       <p class="hotel-card-price">От 3000 ₽</p>
@@ -186,15 +188,15 @@
     <option value="6">6</option>
     <option value="10">10</option>
   </select>
-</main>
-<footer class="page-footer-catalog">
-  <section class="footer-subscribe">
-    <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
-    <p class="page-footer-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+  <section class="subscribe">
+    <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+    <p class="subscribe-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
     <label for="newsletter-email"></label>
     <input class="field" placeholder="Ваш Email" type="email" name="newsletter-email" id="newsletter-email" required>
     <button class="button newsletter-button" type="submit">Подписаться</button>
   </section>
+</main>
+<footer class="page-footer">
   <section class="footer-social">
     <ul class="footer-social-list">
       <li class="footer-social-item">
@@ -218,7 +220,7 @@
   </section>
   <section class="footer-made-in">
     <a class="button" href="https://htmlacademy.ru/">
-      <img src="images/academy-link.svg" width="114px" height="32px" alt="HTML академия">
+      <img src="images/logo-academy-link.svg" width="114px" height="32px" alt="HTML академия">
     </a>
   </section>
 </footer>

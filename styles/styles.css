@@ -42,6 +42,7 @@
 
   .navigation-here {
     color: #ffffff;
+    font-size: 16px;
     background-color: #756257;
     text-transform: uppercase;
   }
@@ -53,8 +54,12 @@
     line-height: 36px;
     text-align: center;
     text-transform: uppercase;
-    background-image: url("../images/index-background.jpg");
+    background-image: url("../images/background-index.jpg");
     background-repeat: no-repeat;
+  }
+
+  .main-index-title {
+    background-color: #ffffff;
   }
 
   .main-index-description {
@@ -80,11 +85,35 @@
     background-color: #83B3D3;
   }
 
+  .advantages-list-square {
+    background-color: rgba(131, 179, 211, 0.12);
+  }
+
+  .advantages-list-road {
+    background-color: rgba(131, 179, 211, 0.2);
+  }
+
+  .advantages-list-tourists {
+    background-color: rgba(131, 179, 211, 0.12);
+  }
+
   .advantages-title {
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
     font-weight: 700;
+  }
+
+  .advantages-options-house {
+    background-color: rgba(131, 179, 211, 0.12);
+  }
+
+  .advantages-options-food {
+    background-color: #ffffff;
+  }
+
+  .advantages-options-souvenirs {
+    background-color: rgba(131, 179, 211, 0.12);
   }
 
   .advantages-title-options {
@@ -130,11 +159,17 @@
 
   /* catalog main */
 
+
   .main-inner {
     color: #000000;
-    background-color: #FFFFFF;
-    background-image: url("../images/catalog-background.jpg");
-    background-repeat: no-repeat;
+    background-color: #ffffff;
+  }
+
+  .main-search {
+    background-color: #83B3D3;
+    background-image: url("../images/background-catalog.jpg");
+    background-size: cover;
+
   }
 
   .inner-header-title {
@@ -146,6 +181,11 @@
 
   .breadcrumbs {
     color: #ffffff;
+  }
+
+  .breadcrumbs-item {
+    font-size: 16px;
+    line-height: 21px;
   }
 
   .breadcrumbs-link {
@@ -275,6 +315,51 @@
     text-transform: none;
   }
 
+  .subscribe-index {
+    color: #ffffff;
+    background-color: #83B3D3;
+    background-image: url("../images/background-footer.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .subscribe-index-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .subscribe-index-description {
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: none;
+  }
+
+  .subscribe {
+    color: #000000;
+    text-align: center;
+  }
+
+  .subscribe-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .subscribe-description {
+    font-size: 22px;
+    line-height: 26px;
+
+  }
+
+  .newsletter-button {
+    color: #ffffff;
+    background-color: #83B3D3;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
 /* footer */
 
 .page-footer {
@@ -283,35 +368,6 @@
   color: #ffffff;
   text-align: center;
   text-decoration: none;
-  background-image: url("../images/footer-background.jpg");
-  background-repeat: no-repeat;
-}
-
-.page-footer-catalog {
-  font-size: 30px;
-  line-height: 36px;
-  color: #000000;
-  text-align: center;
-  text-decoration: none;
-}
-
-.page-footer-title {
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.newsletter-button {
-  color: #ffffff;
-  background-color: #83B3D3;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.page-footer-description {
-  font-size: 22px;
-  line-height: 26px;
 }
 
 /* номер телефона сделать без наклона */
@@ -319,6 +375,10 @@
 .footer-contacts-phone {
   color: #000000;
   text-decoration: none;
+  font-style: normal;
 }
 
-
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
