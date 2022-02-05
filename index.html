@@ -6,11 +6,10 @@
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="styles/styles.css">
 </head>
-
 <body>
   <header class="page-header">
     <nav class="navigation">
-      <img class="logo" src="images/logo.svg" width="139px" height="70px" alt="Логотип">
+      <img class="navigation-logo" src="images/logo.svg" width="139px" height="70px" alt="Логотип">
       <ul class="navigation-list">
         <li class="navigation-item">
           <a class="navigation-link" href="index.html">Главная</a>
@@ -41,7 +40,8 @@
       </ul>
     </nav>
   </header>
-  <main class="main-index">
+  <main class="main-index main-container">
+    <div class="page-container">
     <h1 class="visually-hidden">Город Седона</h1>
     <img class="logo" src="images/logo-welcome-sedona.svg" width="458px" height="352px" alt="Добро пожаловать."><br>
       <section class="main-index-title">
@@ -51,11 +51,12 @@
         <section class="advantages">
           <ul class="advantages-list">
             <li class="advantages-item">
-            <div class="advantages-list-images">
+            <div class="advantages-item-images-first">
               <h2 class="advantages-title">Настоящий городок</h2>
-              <img class="content-images" src="images/main-true-city.jpg" width="800px" height="384px">
               <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <img class="content-images" src="images/main-true-city.jpg" width="800px" height="384px">
             </div>
+            <div class="advantages-container">
               <dl class="advantages-options-house">
                 <dt class="advantages-title-options">Жильё</dt>
                 <img class="logo" src="images/house.svg" width="74px" height="72px" alt="Домик">
@@ -71,14 +72,17 @@
                 <img class="logo" src="images/souvenirs.svg" width="64px" height="75px" alt="Коробка с подарком">
                 <dd>Не только китайского, но и настоящего местного производства!</dd>
               </dl>
-            </li>
-            <div class="advantages-list-images">
-            <li class="advantages-item">
-              <h2 class="advantages-title">Там есть мост дьявола</h2>
-              <img class="content-images" src="images/main-devil's-bridge.jpg" width="800px" height="384px">
-              <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            </li>
             </div>
+            </li>
+            <li class="advantages-item">
+              <div class="advantages-item-images-second">
+              <h2 class="advantages-title">Там есть мост дьявола</h2>
+              <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              <img class="content-images" src="images/main-devil's-bridge.jpg" width="800px" height="384px">
+              </div>
+
+            </li>
+          <div class="advantages-container">
             <div class="advantages-list-square">
               <li class="advantages-item">
                 <h2 class="advantages-title">Небольшая площадь</h2>
@@ -97,6 +101,7 @@
                 <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
               </li>
             </div>
+          </div>
           </ul>
         </section>
         <section class="appointment">
@@ -113,8 +118,10 @@
           <input class="field" placeholder="Ваш Email" type="email" name="newsletter-email" id="newsletter-email" required>
           <button class="button newsletter-button" type="submit">Подписаться</button>
         </section>
+    </div>
   </main>
   <footer class="page-footer">
+  <div class="page-footer-container">
     <section class="footer-social">
       <ul class="footer-social-list">
         <li class="footer-social-item">
@@ -141,6 +148,7 @@
         <img src="images/logo-academy-link.svg" width="114px" height="32px" alt="HTML академия">
       </a>
     </section>
+  </div>
   </footer>
 </body>
 </html>

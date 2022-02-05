@@ -10,7 +10,7 @@
 <body>
   <header class="page-header">
     <nav class="navigation">
-      <a class="index-logo" href="index.html">
+      <a class="navigation-logo" href="index.html">
         <img class="logo" src="images/logo.svg" width="139px" height="70px" alt="Логотип города Седона.">
       </a>
       <ul class="navigation-list">
@@ -43,8 +43,12 @@
       </ul>
     </nav>
   </header>
-<main class="main-inner">
-  <div class="main-search">
+<main class="main-inner main-container">
+  <div class="page-container">
+
+<!-- меню поиска-->
+
+    <div class="main-search">
     <header class="inner-header">
     <h1 class="inner-header-title">Гостиницы Седоны</h1>
     <ul class="breadcrumbs">
@@ -57,8 +61,8 @@
         <a class="breadcrumbs-link">Гостиницы</a>
       </li>
     </ul>
-  </header>
-  <section class="catalog-products">
+    </header>
+    <section class="catalog-products">
     <h2 class="visually-hidden">Выбрать критерии</h2>
     <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
       <fieldset class="catalog-filter-groop">
@@ -105,12 +109,20 @@
       <button class="button button-false" type="submit">Сбросить</button>
     </form>
   </section>
-  </div>
-  <p class="search-result">НАЙДЕНО ГОСТИНИЦ:38</p>
+    </div>
+
+
+
+<!-- сортировка-->
+
+
+<div class="sort-container">
+  <p class="search-result">найдено гостиниц:38</p>
   <select class="select-control" aria-label="Сортировка">
     <option value="low price">Сначала дешевые</option>
     <option value="hign prise">Сначала дорогие</option>
   </select>
+  <div class="button-visually">
   <a class="button button-dark" href="#">
     <span class="visually-hidden">Визуализация карточками</span>
   </a>
@@ -120,7 +132,12 @@
   <a class="button button-light" href="#">
     <span class="visually-hidden">Визуализация списком</span>
   </a>
+</div>
+</div>
 
+<!--Каталог-->
+
+<div class="catalog-container">
   <ul class="hotels-list">
     <li class="hotel-card">
       <a class="hotel-card-link" href="hotel-1.html">
@@ -131,7 +148,6 @@
       <a class="hotel-card-info" href="#">подробнее</a>
       <a class="hotel-card-subscribe" href="#">в избранное</a>
       <img class="hotel-card-rating" src="images/star.svg" width="18px" height="17px" alt="Рейтинг">
-      <!--не знаю как рейтинг делать повторяющимся-->
     </li>
     <li class="hotel-card">
       <a class="hotel-card-link" href="hotel-2.html">
@@ -164,7 +180,12 @@
       <img class="hotel-card-rating" src="images/star.svg" width="18px" height="17px" alt="Рейтинг">
     </li>
   </ul>
-  <button class="button pagination-show-more" type="button">Загрузить еще</button>
+  <button class="button button-show-more" type="button">Загрузить еще</button>
+</div>
+
+<!--Пагинация-->
+
+<div class="pagination-container">
   <ul class="pagination">
     <li class="pagination-item">
       <a class="pagination-link pagination-current">1</a>
@@ -188,6 +209,11 @@
     <option value="6">6</option>
     <option value="10">10</option>
   </select>
+</div>
+
+<!--Подписка-->
+
+
   <section class="subscribe">
     <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
     <p class="subscribe-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
@@ -195,8 +221,13 @@
     <input class="field" placeholder="Ваш Email" type="email" name="newsletter-email" id="newsletter-email" required>
     <button class="button newsletter-button" type="submit">Подписаться</button>
   </section>
+  </div>
 </main>
+
+<!--Футер-->
+
 <footer class="page-footer">
+  <div class="page-footer-container">
   <section class="footer-social">
     <ul class="footer-social-list">
       <li class="footer-social-item">
@@ -223,6 +254,7 @@
       <img src="images/logo-academy-link.svg" width="114px" height="32px" alt="HTML академия">
     </a>
   </section>
+  </div>
 </footer>
 </body>
 </html>
