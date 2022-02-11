@@ -10,33 +10,33 @@
 <body>
   <header class="page-header">
     <nav class="navigation">
-      <a class="navigation-logo" href="index.html">
-        <img class="logo" src="images/logo.svg" width="139px" height="70px" alt="Логотип города Седона.">
-      </a>
+      <img class="navigation-logo" src="images/logo.svg" width="139px" height="70px" alt="Логотип.">
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link" href="index.html">Главная</a>
+          <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="about.html">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link navigation-link-current" href="Hotels.html">Гостиницы</a>
+          <a class="navigation-link" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
-      <ul class="navigation-list navigation-user">
+      <ul class="navigation-list-user">
         <li class="navigation-item">
-          <a class="navigation-link navigation-user" href="Search.html">
+          <a class="navigation-link-user" href="Search.html">
+            <img class="" src="images/icon-search.svg" alt="">
             <span class="visually-hidden">Поиск</span>
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link navigation-user" href="Favorites.html">
+          <a class="navigation-link-user" href="Favorites.html">
+            <img class="" src="images/icon-favorite.svg" alt="">
             <span class="visually-hidden">Избранное</span>
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link navigation-user navigation-here" href="#">
+          <a class="navigation-link-user navigation-here" href="#">
             <span class="button">хочу сюда!</span>
           </a>
         </li>
@@ -54,6 +54,7 @@
     <ul class="breadcrumbs">
       <li class="breadcrumbs-item">
         <a class="breadcrumbs-link" href="index.html">
+          <img src="images/icon-homepage.svg" alt="Домашняя страница.">
           <span class="visually-hidden">Домашняя страница</span>
         </a>
       </li>
@@ -106,8 +107,10 @@
           </ul>
       </fieldset>
       <!--Тут пузомерок надо, пока не делаем, в следующем лайве будут объяснять-->
+      <div class="button-container">
       <button class="button button-truth" type="submit">Применить</button>
       <button class="button button-false" type="submit">Сбросить</button>
+      </div>
     </form>
   </section>
     </div>
@@ -145,40 +148,55 @@
         <img class="hotel-card-images" src="images/hotel-amara-resort-spa.jpg" width="299px" height="206px" alt="Amara Resort & Spa">
         <h2 class="hotel-card-title">Amara Resort & Spa</h2>
       </a>
+      <div class="card">
       <p class="hotel-card-price">От 4000 ₽</p>
       <a class="hotel-card-info" href="#">подробнее</a>
       <a class="hotel-card-subscribe" href="#">в избранное</a>
-      <img class="hotel-card-rating" src="images/star.svg" width="18px" height="17px" alt="Рейтинг">
+      <img class="hotel-card-rating" src="images/icon-star.svg" width="18px" height="17px" alt="Рейтинг">
+      <img class="hotel-card-rating" src="images/icon-star.svg" width="18px" height="17px" alt="Рейтинг">
+      <img class="hotel-card-rating" src="images/icon-star.svg" width="18px" height="17px" alt="Рейтинг">
+      <img class="hotel-card-rating" src="images/icon-star.svg" width="18px" height="17px" alt="Рейтинг">
+    </div>
     </li>
     <li class="hotel-card">
       <a class="hotel-card-link" href="hotel-2.html">
         <img class="hotel-card-images" src="images/hotel-desert-quail-inn.jpg" width="299px" height="206px" alt="Desert Quail Inn">
         <h2 class="hotel-card-title">Desert Quail Inn</h2>
       </a>
+      <div class="card">
       <p class="hotel-card-price">От 3000 ₽</p>
       <a class="hotel-card-info" href="#">подробнее</a>
       <a class="hotel-card-subscribe" href="#">в избранное</a>
-      <img class="hotel-card-rating" src="images/star.svg" width="18px" height="17px" alt="Рейтинг">
+      <img class="hotel-card-rating" src="images/icon-star.svg" width="18px" height="17px" alt="Рейтинг">
+      <img class="hotel-card-rating" src="images/icon-star.svg" width="18px" height="17px" alt="Рейтинг">
+      <img class="hotel-card-rating" src="images/icon-star.svg" width="18px" height="17px" alt="Рейтинг">
+      </div>
     </li>
     <li class="hotel-card">
       <a class="hotel-card-link" href="hotel-3.html">
         <img class="hotel-card-images" src="images/hotel-villas-poco-diablo.jpg" width="299px" height="206px" alt="Villas at Poco Diablo">
         <h2 class="hotel-card-title">Villas at Poco Diablo</h2>
       </a>
+      <div class="card">
       <p class="hotel-card-price">От 2000 ₽</p>
       <a class="hotel-card-info" href="#">подробнее</a>
       <a class="hotel-card-subscribe hotel-card-subscribe-current" href="#">в избранное</a>
-      <img class="hotel-card-rating" src="images/star.svg" width="18px" height="17px" alt="Рейтинг">
+      <img class="hotel-card-rating" src="images/icon-star.svg" width="18px" height="17px" alt="Рейтинг">
+      <img class="hotel-card-rating" src="images/icon-star.svg" width="18px" height="17px" alt="Рейтинг">
+      </div>
     </li>
     <li class="hotel-card">
       <a class="hotel-card-link" href="hotel-4.html">
         <img class="hotel-card-images" src="images/hotel-greentree-inn.jpg" width="299px" height="206px" alt="GreenTree Inn">
         <h2 class="hotel-card-title">GreenTree Inn</h2>
       </a>
+      <div class="card">
       <p class="hotel-card-price">От 3000 ₽</p>
       <a class="hotel-card-info" href="#">подробнее</a>
       <a class="hotel-card-subscribe" href="#">в избранное</a>
-      <img class="hotel-card-rating" src="images/star.svg" width="18px" height="17px" alt="Рейтинг">
+      <img class="hotel-card-rating" src="images/icon-star.svg" width="18px" height="17px" alt="Рейтинг">
+      <img class="hotel-card-rating" src="images/icon-star.svg" width="18px" height="17px" alt="Рейтинг">
+      </div>
     </li>
   </ul>
   <button class="button button-show-more" type="button">Загрузить еще</button>
@@ -209,8 +227,8 @@
       <a class="pagination-link" href="#">10</a>
     </li>
   </ul>
-  <label class="filter-amount" for="amount">Гостиниц на странице</label>
-  <select name="amount of hotels" id="amount">
+  <label class="filter-amount-description" for="amount">Гостиниц на странице</label>
+  <select class="filter-amount" name="amount of hotels" id="amount">
     <option value="4">4</option>
     <option value="6">6</option>
     <option value="10">10</option>
@@ -223,9 +241,11 @@
   <section class="subscribe">
     <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
     <p class="subscribe-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
-    <label for="newsletter-email"></label>
-    <input class="field" placeholder="Ваш Email" type="email" name="newsletter-email" id="newsletter-email" required>
+    <div>
+      <label for="newsletter-email"></label>
+    <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
     <button class="button newsletter-button" type="submit">Подписаться</button>
+    </div>
   </section>
   </div>
 </main>
@@ -237,15 +257,21 @@
   <section class="footer-social">
     <ul class="footer-social-list">
       <li class="footer-social-item">
-        <a class="button" href="#"></a>
+        <a class="button" href="#">
+          <img src="images/social-twiter.svg" alt="Твиттер.">
+        </a>
         <span class="visually-hidden">Твиттер</span>
       </li>
       <li class="footer-social-item">
-        <a class="button" href="#"></a>
+        <a class="button" href="#">
+          <img src="images/social-facebook.svg" alt="Фейсбук.">
+        </a>
         <span class="visually-hidden">Фейсбук</span>
       </li>
       <li class="footer-social-item">
-        <a class="button" href="#"></a>
+        <a class="button" href="#">
+          <img src="images/social-youtube.svg" alt="Ютуб.">
+        </a>
         <span class="visually-hidden">Ютуб</span>
       </li>
     </ul>
