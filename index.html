@@ -1,96 +1,119 @@
 <!DOCTYPE html>
 <html lang="ru">
 
+
+
+
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="styles/styles.css">
 </head>
-
 <body>
   <header class="page-header">
     <nav class="navigation">
-      <img class="logo" src="images/logo.svg" width="139px" height="70px" alt="Логотип">
+      <img class="navigation-logo" src="images/logo.svg" width="139px" height="70px" alt="Логотип.">
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link" href="index.html">Главная</a>
+          <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="about.html">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="hotels.html">Гостиницы</a>
+          <a class="navigation-link" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
-      <ul class="navigation-list navigation-user">
+      <ul class="navigation-list-user">
         <li class="navigation-item">
-          <a class="navigation-link navigation-user" href="Search.html">
+          <a class="navigation-link-user" href="Search.html">
+            <img class="" src="images/icon-search.svg" alt="">
             <span class="visually-hidden">Поиск</span>
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link navigation-user" href="Favorites.html">
+          <a class="navigation-link-user" href="Favorites.html">
+            <img class="" src="images/icon-favorite.svg" alt="">
             <span class="visually-hidden">Избранное</span>
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link navigation-user navigation-here" href="#">
+          <a class="navigation-link-user navigation-here" href="#">
             <span class="button">хочу сюда!</span>
           </a>
         </li>
       </ul>
     </nav>
   </header>
-  <main class="main-index">
+  <main class="main-index main-container">
+    <div class="page-container">
     <h1 class="visually-hidden">Город Седона</h1>
-    <img class="logo" src="images/logo-WELCOME.svg" width="187px" height="44px" alt="Добро пожаловать"><br>
-    <img class="logo" src="images/logo-to-the-gorgeous.svg" width="256px" height="28px" alt="'Великолепный'"><br>
-    <img class="logo" src="images/logo-SEDONA.svg" width="456px" height="212px" alt="Седона-гранд каньон"><br>
-      <p class="main-index-description">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-      <p class="main-index-advantages">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+    <img class="logo" src="images/logo-welcome-sedona.svg" width="458px" height="352px" alt="Добро пожаловать."><br>
+      <section class="main-index-title">
+        <p class="main-index-description">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="main-index-advantages">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+      </section>
         <section class="advantages">
           <ul class="advantages-list">
             <li class="advantages-item">
-            <div class="advantages-list-images">
-              <h2 class="advantages-title">Настоящий городок</h2>
-              <img class="content-images" src="images/true-city.jpg" width="800px" height="384px">
-              <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            </div>
-              <dl class="advantages-options">
-                <dt class="advantages-title-options">Жильё</dt>
-                <img class="logo" src="images/house.svg" width="74px" height="72px" alt="Домик">
-                <dd>Рекомендуем пожить в настоящем мотеле, всё как в кино!</dd>
-              </dl>
-              <dl class="advantages-options">
-                <dt class="advantages-title-options">Еда</dt>
-                <img class="logo" src="images/food.svg" width="73px" height="70px" alt="Бургер>">
-                <dd>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</dd>
-              </dl>
-              <dl class="advantages-options">
-                <dt class="advantages-title-options">Сувениры</dt>
-                <img class="logo" src="images/souvenirs.svg" width="64px" height="75px" alt="Коробка с подарком">
-                <dd>Не только китайского, но и настоящего местного производства!</dd>
-              </dl>
+              <div class="advantages-container">
+                <div class="dark-blue-container">
+                  <div class="text-container">
+                    <h2 class="advantages-title">Настоящий городок</h2>
+                    <p class="advantages-description-namber">— №1 —</p>
+                    <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                  </div>
+                  <img class="content-images" src="images/main-true-city.jpg" width="800px" height="384px">
+                </div>
+              </div>
+                    <div class="options-container">
+                      <div class="light-blue-container">
+                        <img class="options-logo" src="images/house.svg" width="74px" height="72px" alt="Домик">
+                        <h3 class="options-title">Жильё</h3>
+                        <p class="options-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                      </div>
+                      <div class="white-container">
+                        <img class="options-logo" src="images/food.svg" width="73px" height="70px" alt="Бургер>">
+                        <h3 class="options-title">Еда</h3>
+                        <p class="options-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+                      </div>
+                      <div class="light-blue-container">
+                        <img class="options-logo" src="images/souvenirs.svg" width="64px" height="75px" alt="Коробка с подарком">
+                        <h3 class="options-title">Сувениры</h3>
+                        <p class="options-description">Не только китайского, но и настоящего местного производства!</p>
+                      </div>
+                    </div>
             </li>
-            <div class="advantages-list-images">
             <li class="advantages-item">
-              <h2 class="advantages-title">Там есть мост дьявола</h2>
-              <img class="content-images" src="images/devil's-bridge.jpg" width="800px" height="384px">
-              <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            </li>
+            <div class="advantages-container">
+              <div class="dark-blue-container">
+                <img class="content-images" src="images/main-devil's-bridge.jpg" width="800px" height="384px">
+                <div class="text-container">
+                  <h2 class="advantages-title">Там есть мост дьявола</h2>
+                  <p class="advantages-description-namber">— №2 —</p>
+                  <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                </div>
+              </div>
             </div>
-            <li class="advantages-item">
+            </li>
+            <div class="advantages-container">
+            <li class="advantages-item light-blue-container">
               <h2 class="advantages-title">Небольшая площадь</h2>
+              <p class="advantages-description-namber">— №3 —</p>
               <p class="advantages-description">Все достопримечательности находятся очень близко</p>
             </li>
-            <li class="advantages-item">
+            <li class="advantages-item midle-blue-container">
               <h2 class="advantages-title">Красивая дорога</h2>
+              <p class="advantages-description-namber">— №4 —</p>
               <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
-            <li class="advantages-item">
+            <li class="advantages-item light-blue-container">
               <h2 class="advantages-title">Мало туристов</h2>
+              <p class="advantages-description-namber">— №5 —</p>
               <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
+            </div>
           </ul>
         </section>
         <section class="appointment">
@@ -100,27 +123,35 @@
             <button class="button search-button" type="submit">поиск гостиницы в Седоне</button>
           </form>
         </section>
+        <section class="subscribe-index">
+          <h2 class="subscribe-index-title">Подпишитесь на рассылку</h2>
+          <p class="subscribe-index-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+          <label for="newsletter-email"></label>
+          <input class="field" placeholder="Ваш Email" type="email" name="newsletter-email" id="newsletter-email" required>
+          <button class="button newsletter-button" type="submit">Подписаться</button>
+        </section>
+    </div>
   </main>
   <footer class="page-footer">
-    <section class="footer-subscribe">
-      <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
-      <p class="page-footer-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
-      <label for="newsletter-email"></label>
-      <input class="field" placeholder="Ваш Email" type="email" name="newsletter-email" id="newsletter-email" required>
-      <button class="button newsletter-button" type="submit">Подписаться</button>
-    </section>
+    <div class="page-footer-container">
     <section class="footer-social">
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a class="button" href="#"></a>
+          <a class="button" href="#">
+            <img src="images/social-twiter.svg" alt="Твиттер.">
+          </a>
           <span class="visually-hidden">Твиттер</span>
         </li>
         <li class="footer-social-item">
-          <a class="button" href="#"></a>
+          <a class="button" href="#">
+            <img src="images/social-facebook.svg" alt="Фейсбук.">
+          </a>
           <span class="visually-hidden">Фейсбук</span>
         </li>
         <li class="footer-social-item">
-          <a class="button" href="#"></a>
+          <a class="button" href="#">
+            <img src="images/social-youtube.svg" alt="Ютуб.">
+          </a>
           <span class="visually-hidden">Ютуб</span>
         </li>
       </ul>
@@ -132,9 +163,10 @@
     </section>
     <section class="footer-made-in">
       <a class="button" href="https://htmlacademy.ru/">
-        <img src="images/academy-link.svg" width="114px" height="32px" alt="HTML академия">
+        <img src="images/logo-academy-link.svg" width="114px" height="32px" alt="HTML академия">
       </a>
     </section>
+    </div>
   </footer>
 </body>
 </html>
