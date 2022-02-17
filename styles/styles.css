@@ -415,7 +415,7 @@
   .sort-container {
     display: flex;
     width: 1057px;
-    margin: 41px 72px 53px 72px;
+    margin: 41px 72px 33px 72px;
   }
 
   .search-result {
@@ -452,12 +452,11 @@
 
   .hotels-list {
     display: flex;
-    width: 1200px;
+    width: 1056px;
     flex-wrap: wrap;
     font-size: 18px;
     line-height: 23px;
     color: #333333;
-    list-style: none;
     margin: 0;
     padding: 0;
   }
@@ -465,6 +464,12 @@
   .hotel-card {
     display: flex;
     flex-direction: column;
+    margin-right: 18px;
+    width: 340px;
+  }
+
+  li:nth-child(3n) {
+    margin: 0;
   }
 
   .hotel-card-link {
@@ -473,7 +478,10 @@
     font-weight: 700;
     color: #000000;
     text-decoration: none;
-    margin-right: 18px;
+  }
+
+  .hotel-card-images {
+    margin: 20px 20px 16px;
   }
 
   .type-housing {
@@ -492,6 +500,30 @@
     font-size: 24px;
     line-height: 31px;
     font-weight: 700;
+    width: 300px;
+    margin: 0px;
+    margin-left: 20px;
+  }
+
+  .card-options {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 16px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 133px 140px;
+    gap: 16px 25px;
+    grid-template-areas:
+    "type-housing hotel-card-price"
+    "hotel-card-info hotel-card-subscribe"
+    "stars hotel-card-rating";
+  }
+
+/*тут область stars для звездочек*/
+
+  .hotel-card-rating {
+    justify-self: end;
+    grid-area: hotel-card-rating;
   }
 
   .hotel-card-price {
