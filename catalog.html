@@ -22,8 +22,8 @@
           <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
-      <ul class="navigation-list-user">
-        <li class="navigation-item">
+      <ul class="navigation-user-list">
+        <li class="navigation-user-item">
           <a class="navigation-link-user" href="Search.html">
             <svg class="navigation-icon" aria-hidden="true" focusable="false" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="m19.026 17.05-3.71-3.7c1.002-1.3 1.704-3 1.704-4.9 0-4.4-3.61-8-8.023-8C4.585.45.975 4.15.975 8.55c0 4.4 3.61 8 8.022 8 1.805 0 3.51-.6 4.914-1.7l3.71 3.7 1.405-1.5Zm-10.029-2.5c-3.309 0-6.017-2.7-6.017-6s2.708-6 6.017-6c3.31 0 6.017 2.7 6.017 6s-2.707 6-6.017 6Z" fill="#000"/>
@@ -31,15 +31,16 @@
             <span class="visually-hidden">Поиск</span>
           </a>
         </li>
-        <li class="navigation-item">
+        <li class="navigation-user-item">
           <a class="navigation-link-user" href="Favorites.html">
             <svg class="navigation-icon" aria-hidden="true" focusable="false" width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9.444 17c-.301 0-.602-.1-.802-.4-5.416-6.1-6.72-7.5-7.02-7.9C.92 7.8.519 6.6.519 5.4c0-3 2.406-5.4 5.515-5.4 1.304 0 2.507.5 3.51 1.3C10.547.5 11.851 0 13.054 0c3.008 0 5.516 2.4 5.516 5.4 0 1.3-.502 2.5-1.304 3.4l-7.02 7.9c-.2.2-.401.3-.802.3ZM3.427 7.5c.3.4 3.51 4 6.117 6.9l6.218-7c.501-.5.702-1.2.702-2 0-1.8-1.505-3.3-3.31-3.3-1.002 0-2.005.5-2.707 1.3-.301.3-.602.4-.903.4-.3 0-.602-.2-.802-.4-.702-.8-1.705-1.3-2.708-1.3-1.805 0-3.31 1.5-3.31 3.3-.1.9.302 1.6.703 2.1-.1 0-.1 0 0 0Z" fill="#000"/>
             </svg>
             <span class="visually-hidden">Избранное</span>
+            <span class="favorit-namber">12</span>
           </a>
         </li>
-        <li class="navigation-item">
+        <li class="navigation-user-item">
           <a class="navigation-link-user navigation-here" href="#">хочу сюда!</a>
         </li>
       </ul>
@@ -51,8 +52,8 @@
 <!-- меню поиска-->
 
     <div class="main-search">
-    <header class="inner-header">
-    <h1 class="inner-header-title">Гостиницы Седоны</h1>
+
+    <h1 class="main-header-title">Гостиницы Седоны</h1>
     <ul class="breadcrumbs">
       <li class="breadcrumbs-item">
         <a class="breadcrumbs-link breadcrumbs-homepage" href="index.html">
@@ -66,7 +67,7 @@
         <a class="breadcrumbs-link breadcrumbs-hotel">Гостиницы</a>
       </li>
     </ul>
-    </header>
+
 
 
 
@@ -174,7 +175,11 @@
       <a class="hotel-card-info" href="#">подробнее</a>
       <a class="hotel-card-subscribe" href="#">в избранное</a>
       <p class="hotel-card-rating" href="#">Рейтинг 8,5</p>
-    </div>
+        <div class="stars stars-four">
+          <span class="visually-hidden">4 Звезды</span>
+        </div>
+      </div>
+
     </li>
     <li class="hotel-card">
       <a class="hotel-card-link" href="hotel-2.html">
@@ -185,8 +190,11 @@
       <p class="type-housing">Гостиница</p>
       <p class="hotel-card-price">От 3000 ₽</p>
       <a class="hotel-card-info" href="#">подробнее</a>
-      <a class="hotel-card-subscribe" href="#">в избранное</a>
+      <a class="hotel-card-subscribe">в избранное</a>
       <p class="hotel-card-rating" href="#">Рейтинг 8,9</p>
+        <div class="stars stars-three">
+          <span class="visually-hidden">3 Звезды</span>
+        </div>
       </div>
     </li>
     <li class="hotel-card">
@@ -200,6 +208,9 @@
       <a class="hotel-card-info" href="#">подробнее</a>
       <a class="hotel-card-subscribe hotel-card-subscribe-current" href="#">в избранное</a>
       <p class="hotel-card-rating" href="#">Рейтинг 9,2</p>
+        <div class="stars stars-two">
+          <span class="visually-hidden">2 Звезды</span>
+        </div>
       </div>
     </li>
     <li class="hotel-card">
@@ -213,7 +224,9 @@
       <a class="hotel-card-info" href="#">подробнее</a>
       <a class="hotel-card-subscribe" href="#">в избранное</a>
       <p class="hotel-card-rating" href="#">Рейтинг 9,2</p>
-      <img class="" src="images/icon-star.svg" width="18px" height="17px" alt="Рейтинг">
+        <div class="stars stars-two">
+          <span class="visually-hidden">2 Звезды</span>
+        </div>
       </div>
     </li>
   </ul>
