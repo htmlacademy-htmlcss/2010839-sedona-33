@@ -127,12 +127,16 @@
         <legend class="price-title">Стоимость, ₽:</legend>
         <div class="range-wrapper-inputs">
           <label class="catalog-filter-label">
+            <div class="wraper-range-input">
              <input class="range-input" type="number" value="0" name="min-price">
              <span class="range-input-description">от</span>
+            </div>
           </label>
           <label class="catalog-filter-label">
+            <div class="wraper-range-input">
              <input class="range-input" type="number" value="9000" name="max-price">
              <span class="range-input-description">до</span>
+            </div>
           </label>
         </div>
         <div class="range">
@@ -300,7 +304,7 @@
     <div class="newsletter-container">
       <label for="newsletter-email"></label>
       <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-      <button class="button newsletter-button" type="submit">Подписаться</button>
+      <button class="newsletter-button" type="submit">Подписаться</button>
     </div>
   </section>
   </div>
@@ -343,7 +347,6 @@
       <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
     </address>
   </section>
-
   <section class="footer-made-in">
     <a class="button-made-in" href="https://htmlacademy.ru/">
       <svg class="logo-made-in" width="115" height="33" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -356,7 +359,7 @@
 
 <!-- модальное окно -->
 
-<div class="modal-container">
+<div class="modal-container modal-container-close">
   <div class="modal modal-auth">
     <button class="modal-close-button">
       <span class="visually-hidden">Закрыть</span>
@@ -366,23 +369,41 @@
       <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
         <p class="field-group">
           <label class="modal-description" for="date-in">Дата заезда:</label>
-          <input class="auth-form-field field" type="date" id="date-in">
+          <input class="auth-form-field field" type="text" id="date-in" placeholder="27 апреля 2020">
+          <button class="calendar" type="button"></button>
+          <span class="visually-hidden">Выбрать даты</span>
           <span class="visually-hidden">Мы не можем отправить вас в прошлое.</span>
         </p>
         <p class="field-group">
           <label class="modal-description" for="date-out">Дата выезда:</label>
-          <input class="auth-form-field field" type="date" id="date-out">
+          <input class="auth-form-field field" type="text" id="date-out" placeholder="1 сентября 2021">
+          <button class="calendar" type="button"></button>
+          <span class="visually-hidden">Выбрать даты</span>
           <span class="visually-hidden">На эти даты есть свободные номера. Пока есть.</span>
         </p>
         <div class="modal-options-container">
-        <p class="field-group">
-          <label class="modal-description" for="adult">Взрослые:</label>
-          <input class="auth-form-number field" type="number" id="adult" placeholder="2">
+        <p class="field-group-number">
+            <label class="modal-description" for="adult">Взрослые:</label>
+            <button class="button-less" type="button">
+              <span class="visually-hidden">Меньше</span>
+            </button>
+            <input class="auth-form-number" type="number" id="adult" placeholder="2">
+            <button class="button-more" type="button">
+              <span class="visually-hidden">Больше</span>
+            </button> 
         </p>
-        <p class="field-group">
+        <p class="field-group-number">
           <label class="modal-description" for="children">Дети:</label>
-          <label class="info"></label>
-          <input class="auth-form-number field" type="number" id="children" placeholder="1">
+            <span class="info"></span>
+            <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+
+            <button class="button-less" type="button">
+              <span class="visually-hidden">Меньше</span>
+            </button>
+            <input class="auth-form-number" type="number" id="children" placeholder="1">
+            <button class="button-more" type="button">
+              <span class="visually-hidden">Больше</span>
+            </button>
         </p>
         </div>
         <button class="modal-search-button" type="submit">Найти</button>
