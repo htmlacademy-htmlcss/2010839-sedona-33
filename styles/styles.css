@@ -1483,19 +1483,23 @@ input:focus:invalid {
 
 .button-made-in {
   padding: 10px;
+  outline: none;
 }
 
 .footer-made-in .button-made-in:focus {
-  fill: #756257;
   outline: 3px solid#83B3D3;
   border-radius: 10px;
 }
 
-.footer-made-in .button-made-in:hover path {
+.button-made-in:focus svg {
   fill: #756257;
 }
 
-.footer-made-in .button-made-in:active path {
+.button-made-in:hover svg {
+  fill: #756257;
+}
+
+.button-made-in:active svg {
   fill: rgba(117, 98, 87, 0.3);
 }
 
