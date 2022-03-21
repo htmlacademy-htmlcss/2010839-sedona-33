@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Каталог</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
 </head>
 
@@ -67,9 +68,6 @@
             <a class="breadcrumbs-link breadcrumbs-homepage" href="index.html">
               <span class="visually-hidden">Домашняя страница</span>
             </a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link"></a>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link breadcrumbs-hotel" href="#">Гостиницы</a>
@@ -275,7 +273,7 @@
           </li>
         </ul>
         <div class="button-frame">
-          <button class="button button-show-more" type="button">Загрузить еще</button>
+          <button class="button-show-more" type="button">Загрузить еще</button>
         </div>
       </div>
 
@@ -315,12 +313,12 @@
       <section class="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
-        <div class="newsletter-container">
+        <form class="newsletter-container" action="https://echo.htmlacademy.ru">
           <label for="newsletter-email"></label>
           <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
             required>
           <button class="newsletter-button" type="submit">Подписаться</button>
-        </div>
+        </form>
       </section>
     </div>
   </main>
