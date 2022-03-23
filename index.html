@@ -5,11 +5,11 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="styles/styles.css">
-  <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
 </head>
 
 <body>
+<div class="shadow-wraper">
   <header class="page-header">
     <nav class="navigation">
       <img class="navigation-logo" src="images/logo.svg" width="139" height="70" alt="Логотип.">
@@ -55,11 +55,9 @@
     </nav>
   </header>
   <main class="main-index main-container">
-    <div class="page-container">
       <section class="main-index-logo">
       <h1 class="visually-hidden">Город Седона</h1>
       <img class="logo" src="images/logo-welcome-sedona.svg" width="458" height="352" alt="Добро пожаловать.">
-      <div class="welcome__line"></div>
       </section>
       <section class="main-index-title">
         <h2 class="visually-hidden">Причины.</h2>
@@ -127,7 +125,6 @@
             <p class="advantages-description-namber">— №5 —</p>
             <p class="advantages-description">Большинство едет в Гранд <br> Каньон и толпится там</p>
           </li>
-
         </ul>
       </section>
       <section class="appointment">
@@ -140,12 +137,11 @@
         <h2 class="subscribe-index-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-index-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form class="newsletter-index-container" action="https://echo.htmlacademy.ru">
-          <label for="newsletter-email"></label>
-          <input class="field" placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email" required>
+          
+          <input class="field" placeholder="Ваш email" type="email" name="newsletter-email" required>
           <button class="newsletter-button" type="submit">Подписаться</button>
         </form>
       </section>
-    </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer-container">
@@ -199,7 +195,7 @@
       </section>
     </div>
   </footer>
-
+</div>
   <!-- модальное окно -->
 
   <div class="modal-container modal-container-close">

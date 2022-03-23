@@ -5,11 +5,11 @@
   <meta charset="utf-8">
   <title>Каталог</title>
   <link rel="stylesheet" href="styles/styles.css">
-  <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
 </head>
 
 <body>
+  <div class="shadow-wraper">
   <header class="page-header">
     <nav class="navigation">
       <a class="header-logo" href="index.html">
@@ -91,7 +91,7 @@
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                    <input class="visually-hidden control-input" type="checkbox" name="parking" checked disabled>
                     <span class="control-mark"></span>
                     <span class="control-label">Парковка</span>
                   </label>
@@ -110,23 +110,21 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="radio" name="living room option" value="Hotel"
-                      checked>
+                    <input class="visually-hidden control-input" type="radio" name="living room option" value="Hotel" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Гостиница</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="radio" name="living room option" value="Motel">
+                    <input class="visually-hidden control-input" type="radio" name="living room option" value="Motel" disabled>
                     <span class="control-mark"></span>
                     <span class="control-label">Мотель</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="radio" name="living room option"
-                      value="Apartments">
+                    <input class="visually-hidden control-input" type="radio" name="living room option" value="Apartments">
                     <span class="control-mark"></span>
                     <span class="control-label">Апартаменты</span>
                   </label>
@@ -177,8 +175,7 @@
         <div class="button-visually">
           <a class="button-catalog button-catalog-curent" href="#">
             <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"
-                fill="#000" />
+              <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" fill="#000" />
             </svg>
             <span class="visually-hidden">Визуализация карточками</span>
           </a>
@@ -322,9 +319,6 @@
       </section>
     </div>
   </main>
-
-  <!--Футер-->
-
   <footer class="page-footer">
     <div class="page-footer-container">
       <section class="footer-social">
@@ -377,6 +371,7 @@
       </section>
     </div>
   </footer>
+  </div>
 </body>
 
 </html>
