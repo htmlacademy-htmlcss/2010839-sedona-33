@@ -9,6 +9,7 @@
 </head>
 
 <body>
+<div class="shadow-wraper">
   <header class="page-header">
     <nav class="navigation">
       <img class="navigation-logo" src="images/logo.svg" width="139" height="70" alt="Логотип.">
@@ -54,10 +55,10 @@
     </nav>
   </header>
   <main class="main-index main-container">
-    <div class="page-container">
+      <section class="main-index-logo">
       <h1 class="visually-hidden">Город Седона</h1>
       <img class="logo" src="images/logo-welcome-sedona.svg" width="458" height="352" alt="Добро пожаловать.">
-      <div class="welcome__line"></div>
+      </section>
       <section class="main-index-title">
         <h2 class="visually-hidden">Причины.</h2>
         <p class="main-index-description">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
@@ -72,8 +73,7 @@
                 <div class="text-container">
                   <h2 class="advantages-title">Настоящий <br> городок</h2>
                   <p class="advantages-description-namber">— №1 —</p>
-                  <p class="advantages-description">Седона — не аттракцион для&nbsp;туристов, там течёт <br> своя жизнь
-                  </p>
+                  <p class="advantages-description">Седона — не аттракцион для&nbsp;туристов, там течёт <br> своя жизнь</p>
                 </div>
                 <img class="content-images" src="images/main-true-city.jpg" width="800" height="384"
                   alt="Фоновое изображение.">
@@ -88,14 +88,12 @@
               <div class="white-container">
                 <img class="options-logo" src="images/food.svg" width="73" height="70" alt="Бургер>">
                 <h3 class="options-title">Еда</h3>
-                <p class="options-description">Всегда заказывайте <br> топовый фирменный бургер, <br> вы не
-                  разочаруетесь!</p>
+                <p class="options-description">Всегда заказывайте топовый&nbsp;фирменный бургер, <br> вы не разочаруетесь!</p>
               </div>
               <div class="light-blue-container">
                 <img class="options-logo" src="images/souvenirs.svg" width="64" height="75" alt="Коробка с подарком">
                 <h3 class="options-title">Сувениры</h3>
-                <p class="options-description">Не только китайского, <br> но и настоящего местного <br> производства!
-                </p>
+                <p class="options-description">Не только китайского, <br> но и настоящего местного производства!</p>
               </div>
             </div>
           </li>
@@ -107,13 +105,11 @@
                 <div class="text-container">
                   <h2 class="advantages-title">Там есть <br> мост дьявола</h2>
                   <p class="advantages-description-namber">— №2 —</p>
-                  <p class="advantages-description">Да, по нему можно пройти! <br> Если вы осмелитесь, <br> разумеется
-                  </p>
+                  <p class="advantages-description">Да, по нему можно пройти! <br> Если вы осмелитесь, разумеется</p>
                 </div>
               </div>
             </div>
           </li>
-
           <li class="advantages-item light-blue-container advantages-item-bottom">
             <h2 class="advantages-title">Небольшая<br>площадь</h2>
             <p class="advantages-description-namber">— №3 —</p>
@@ -129,28 +125,23 @@
             <p class="advantages-description-namber">— №5 —</p>
             <p class="advantages-description">Большинство едет в Гранд <br> Каньон и толпится там</p>
           </li>
-
         </ul>
       </section>
       <section class="appointment">
         <h2 class="appointment-title">Заинтересовались?</h2>
-        <p class="appointment-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
-          гостиниц в Седоне</p>
-        <form class="appointment-form" action="catalog.html" method="post">
-          <button class="button search-button" type="submit">поиск гостиницы в Седоне</button>
-        </form>
+        <p class="appointment-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <!--кнопка открытия модального окна -->
+          <button class="search-button" type="submit">поиск гостиницы в Седоне</button>
       </section>
       <section class="subscribe-index">
         <h2 class="subscribe-index-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-index-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
-        <div class="newsletter-index-container">
-          <label for="newsletter-email"></label>
-          <input class="field" placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email"
-            required>
+        <form class="newsletter-index-container" action="https://echo.htmlacademy.ru">
+          
+          <input class="field" placeholder="Ваш email" type="email" name="newsletter-email" required>
           <button class="newsletter-button" type="submit">Подписаться</button>
-        </div>
+        </form>
       </section>
-    </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer-container">
@@ -204,13 +195,13 @@
       </section>
     </div>
   </footer>
-
+</div>
   <!-- модальное окно -->
 
   <div class="modal-container modal-container-close">
     <!-- модальное окно скрывается при помощи- modal-container-close -->
     <div class="modal modal-auth">
-      <button class="modal-close-button">
+      <button class="modal-close-button" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
       <section class="modal-content">
@@ -218,7 +209,7 @@
         <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="field-group">
             <label class="modal-description" for="date-in">Дата заезда:</label>
-            <input class="auth-form-field field" type="text" id="date-in" placeholder="27 апреля 2020" required>
+            <input class="auth-form-field field" type="text" name="date-in" id="date-in" placeholder="27 апреля 2020" required>
             <button class="calendar" type="button">
               <span class="visually-hidden">Выбрать даты.</span>
             </button>
@@ -226,7 +217,7 @@
           </p>
           <p class="field-group">
             <label class="modal-description" for="date-out">Дата выезда:</label>
-            <input class="auth-form-field field" type="text" id="date-out" placeholder="1 сентября 2021" required>
+            <input class="auth-form-field field" type="text" name="date-out" id="date-out" placeholder="1 сентября 2021" required>
             <button class="calendar" type="button">
               <span class="visually-hidden">Выбрать даты.</span>
             </button>
@@ -238,7 +229,7 @@
               <button class="button-less" type="button">
                 <span class="visually-hidden">Меньше.</span>
               </button>
-              <input class="auth-form-number" type="number" id="adult" placeholder="2">
+              <input class="auth-form-number" type="number" name="adult" id="adult" placeholder="2">
               <button class="button-more" type="button">
                 <span class="visually-hidden">Больше.</span>
               </button>
@@ -249,14 +240,12 @@
                 <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
                   <span class="visually-hidden">Информация.</span>
                 </button>
-                <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с
-                  вами, возраст которых от 6 до 18 лет.
-                  Дети до 6 лет размещаются бесплатно.</span>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
               </span>
               <button class="button-less" type="button">
                 <span class="visually-hidden">Меньше.</span>
               </button>
-              <input class="auth-form-number" type="number" id="children" placeholder="1">
+              <input class="auth-form-number" type="number" name="children" id="children" placeholder="1">
               <button class="button-more" type="button">
                 <span class="visually-hidden">Больше.</span>
               </button>
