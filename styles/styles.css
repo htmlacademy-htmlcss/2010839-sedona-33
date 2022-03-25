@@ -218,7 +218,7 @@ body {
 .main-index-logo {
   position: relative;
   padding-top: 1px;
-  background-color: #68a2ca;
+  background-color: #756257;
   background-image: url("../images/background-index.jpg");
   background-repeat: no-repeat;
 }
@@ -453,7 +453,7 @@ body {
 /* меню поиска */
 
 .main-search {
-  background-color: #83b3d3;
+  background-color: #756257;
   background-image: url("../images/background-catalog.jpg");
   background-size: cover;
   padding: 42px 72px 63px 72px;
@@ -613,6 +613,11 @@ body {
 
 .control-input:disabled ~ .control-mark {
   opacity: 50%;
+}
+
+.control-input:disabled:hover ~ .control-mark {
+  opacity: 50%;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .control-label {
@@ -800,6 +805,7 @@ body {
   padding: 15px 20px;
   border-radius: 4px;
   margin-bottom: 14px;
+  cursor: pointer;
 }
 
 .button-truth:hover {
@@ -826,6 +832,7 @@ body {
   border: none;
   width: 160px;
   padding: 4px 20px;
+  cursor: pointer;
 }
 
 .button-false:hover {
@@ -1299,7 +1306,7 @@ body {
   align-items: center;
   width: 1200px;
   color: #ffffff;
-  background-color: #83b3d3;
+  background-color: #756257;
   background-image: url("../images/background-footer.jpg");
   background-repeat: no-repeat;
 }
@@ -1394,6 +1401,7 @@ input:focus:invalid {
   font-family: "PT Sans", sans-serif;
   border-radius: 0 10px 10px 0;
   padding: 0;
+  cursor: pointer;
 }
 
 .newsletter-button:hover {
